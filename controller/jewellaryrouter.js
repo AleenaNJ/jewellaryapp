@@ -12,6 +12,12 @@ router.post("/add",async(req,res)=>{
     })
 })
 
+router.get("/viewall",async(req,res)=>{
+
+    let data=await jewellarymodel.find()
+    res.json(data)      
+
+})
 
 
 
